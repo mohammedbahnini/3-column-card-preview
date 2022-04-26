@@ -1,0 +1,8 @@
+@use 'variables' as *;
+
+@mixin mobile{
+    @media screen and (max-width : $mobile-down){
+        @content;
+        
+    }
+}

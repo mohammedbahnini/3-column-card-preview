@@ -1,0 +1,131 @@
+/* global reset */
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Lexend Deca", sans-serif;
+  background-color: #f2f2f2;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+main {
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  main {
+    padding: 5rem 0;
+  }
+}
+
+.cols {
+  width: 61.333333rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  min-height: 33.33rem;
+}
+.cols > .col {
+  width: calc(100% / 3);
+}
+@media screen and (max-width: 768px) {
+  .cols {
+    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cols > .col {
+    width: 100%;
+  }
+}
+.cols .col {
+  padding: 3.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.cols .col .logo {
+  height: 2.6666666667rem;
+  margin-bottom: 2.6666666667rem;
+}
+.cols .col .logo img {
+  height: 100%;
+}
+.cols .col .title {
+  font-family: "Big Shoulders Display", cursive;
+  margin-bottom: 2.6666666667rem;
+  text-transform: uppercase;
+}
+.cols .col .text {
+  font-weight: lighter;
+  margin-bottom: 1.5rem;
+}
+.cols .col button {
+  margin-top: auto;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  margin-bottom: 0.2rem;
+  background-color: white;
+  border-radius: 50px;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  outline: none;
+  font-weight: normal;
+  font-family: "Lexend Deca", sans-serif;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.cols .col button:hover {
+  outline: 1px solid white;
+}
+.cols .col:first-child {
+  background-color: #e38826;
+}
+.cols .col:first-child button {
+  color: #e38826;
+}
+.cols .col:first-child button:hover {
+  background-color: #e38826;
+  color: white;
+}
+.cols .col:nth-child(2) {
+  background-color: #006970;
+}
+.cols .col:nth-child(2) button {
+  color: #006970;
+}
+.cols .col:nth-child(2) button:hover {
+  background-color: #006970;
+  color: white;
+}
+.cols .col:last-child {
+  background-color: #004241;
+}
+.cols .col:last-child button {
+  color: #004241;
+}
+.cols .col:last-child button:hover {
+  background-color: #004241;
+  color: white;
+}
